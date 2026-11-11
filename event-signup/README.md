@@ -16,7 +16,7 @@
 | `@nestjs/platform-express` | 12.4.2 |
 | TypeScript | 6.0.3 |
 
-`.nvmrc` 固定为 `26.13.0`。`package.json` 的 `engines.node` 为 `>=20.11`（Nest CLI 的最低要求）。
+`.nvmrc` 固定为 `26.13.0`（本次生成和测试用的 Active LTS）。`package.json` 的 `engines.node` 为 `^22.22.3 || ^24.15.0 || >=26.0.0`，覆盖 lockfile 里 Vite、`@nestjs/schematics` 和 Angular DevKit 都能安装的版本。Nest CLI 自己的声明是 `>=20.11`，整棵依赖树到不了那么低。
 
 ## 启动 PostgreSQL
 
